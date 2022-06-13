@@ -8,5 +8,5 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./content:/var/www/html/content:rw
-      - ./assets:/var/www/html/assets:rw
+      - ./data/content:/var/www/html/content:rw
+      - ./data/assets:/var/www/html/assets:rw
