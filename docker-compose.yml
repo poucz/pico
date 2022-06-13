@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  picocms:
+    build: .
+    container_name: pico
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./content:/var/www/html/content:rw
+      - ./assets:/var/www/html/assets:rw
